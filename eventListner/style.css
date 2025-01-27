@@ -1,0 +1,34 @@
+body{
+text-align: center;
+background-color: #414141;
+
+}
+.parent{
+    height: 100px;
+    width: 500px;
+    display:flex;
+    justify-content: space-around;
+    margin-left: 35%;
+}
+
+
+#gray{
+    height:100px;
+    width: 100px;
+    background-color: gray;
+}
+#red{
+    height:100px;
+    width: 100px;
+    background-color: red;
+}
+#brown{
+    height:100px;
+    width: 100px;
+    background-color: brown;
+}
+#yellow{
+    height:100px;
+    width: 100px;
+    background-color: yellow;
+}
