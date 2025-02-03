@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Coders !</h1>
+    <botton id="stop" style="color: blue;">Stop</botton>
+</body>
+<script>
+    // some basic function
+
+    //  setTimeout(function(){
+    //     console.log("Aniket")
+    // },2000) isko dusre tarike se bhi declare kr sakte hai
+
+    const sayAniket = function(){
+        console.log('Aniket')
+
+    }
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Welcome you in javascript"
+    }
+
+    const changeMe = setTimeout(changeText,2000)
+
+    setTimeout(sayAniket,2000)//here we are giving reference of the function
+    // handler it is a function which do not having name
+   
+   //  now how to stop setTimeout function
+   document.querySelector('#stop').addEventListener('click',() => {
+
+    clearTimeout(changeMe)
+    console.log('STOPPED')
+
+   })
+</script>
+</html>
